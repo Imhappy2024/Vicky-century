@@ -12,7 +12,7 @@ const AGENT_ID = "agent_8e3ee5fa5f3ee9e20ea6cbcccf";    // Your Agent ID
 app.post("/create-web-call", async (req, res) => {
   try {
     const response = await axios.post(
-      "https://api.retellai.com/v2/call/create-web-call",
+      "https://api.retellai.com/v2/create-web-call",
       { agent_id: AGENT_ID },
       { headers: { Authorization: `Bearer ${API_KEY}` } }
     );
